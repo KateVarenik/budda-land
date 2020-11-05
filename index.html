@@ -12,15 +12,17 @@
 				<img src="image/logo.png">
 				
 			</div>
-			<nav>
+			<nav id="menu">
 				<ul>
 					<li><a href="#">ARTIST</a></li>
 					<li><a href="#">EXHIBITION</a></li>
 					<li><a href="#">EVENTS</a></li>
 					<li><a href="#">VISIT US</a></li>
 				</ul>
-
+				<p class="lite-text">MENU</p>
+				<img src="image/close.png" class="close-icon" alt="" onclick="closemenu()">
 			</nav>
+			<img src="image/menu.png" class="menu-icon" alt="" onclick="openmenu()">
 		</div>
 
 		<div class="content-row">
@@ -54,5 +56,27 @@
 		
 	</div>
 
+<script>
+	var menu = document.getElementById("menu");
+	function closemenu(){
+		menu.style.top = "-100vh";
+	}
+
+	function openmenu(){
+		menu.style.top = "0";
+	}
+
+	
+
+</script>
+
+
 </body>
 </html>
+
+
+
+
+
+
+
